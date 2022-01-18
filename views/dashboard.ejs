@@ -1,0 +1,35 @@
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#"><i class="fas fa-tachometer-alt"></i>  Dashboard</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">aboutus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">links</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+            <div class="dropdown pe-5">
+                <button class="btn btn-secondary dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <%= user.name %>
+                </button>
+                <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item text-center" href="#">Profile</a>
+                  <div class="d-grid gap-2 pt-1">
+                    <a href="/users/logout" class="btn btn-danger">Logout</a>
+                  </div>
+                
+                </div>
+              </div>
+        </form>
+      </div>
+    </div>
+  </nav>
